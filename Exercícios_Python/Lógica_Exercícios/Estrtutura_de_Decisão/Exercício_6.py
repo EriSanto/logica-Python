@@ -4,8 +4,8 @@ preço2 = float(input("Me informe o segundo preço: "))
 preço3 = float(input("Me informe o terceiro preço: "))
 
 if preço1 < preço2 and preço3:
-    print(f"O menor preço é o primeiro preço: R${preço1}.")
+    print(f"Você deve comprar o priemeiro intem, pois tem  o menor preço: R${preço1}.")
 elif preço3 < preço1 and preço2:
-    print(f"O menor preço é o preço terceiro preço: R${preço3}.")
-else:
-    print(f"O menor preço é o segundo preço: R${preço2}.")
+    print(f"Você deve comprar o segundo intem, pois tem  o menor preço: R${preço3}.")
+elif preço2 < preço1 and preço3:
+    print(f"Você deve comprar o terceiro intem, pois tem  o menor preço: R${preço2}.")

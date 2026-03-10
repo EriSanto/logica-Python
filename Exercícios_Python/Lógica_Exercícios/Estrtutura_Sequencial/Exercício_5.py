@@ -1,6 +1,6 @@
 #Calculo de salário com descontos.
-vh = float(input())
-vm = float(input())
+vh = float(input("Me informe seu salário hora:"))
+vm = float(input("Me informe as horas trabalhadas esses mês: "))
 
 sb = vh * vm
 
