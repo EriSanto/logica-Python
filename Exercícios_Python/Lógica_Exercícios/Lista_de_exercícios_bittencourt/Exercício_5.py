@@ -17,7 +17,7 @@ numero_de_jogos = 0
 vitoria_flamengo = 0
 vitoria_vasco = 0
 empate = 0
-
+    
 while True: 
     
   gols_flamengo = int(input("Me informe o número de gols do Flamengo:")) 
@@ -36,7 +36,7 @@ while True:
     print("EMPATE!")
     
   novo_jogo = input("Novo Jogo?\n1 - Sim.\n2 - Não. ") 
-  if novo_jogo == 'Não' or novo_jogo == 'não':
+  if novo_jogo == 'Não' or novo_jogo == 'não' or novo_jogo == '2':
        
       if vitoria_flamengo < vitoria_vasco:
        print(f"Número de jogo: {numero_de_jogos} ")
@@ -56,7 +56,8 @@ while True:
         print(f"Número de vitórias do Vasco: {vitoria_vasco}")
         print(f"Número de empates: {empate}")
         print(f"Maior taxa de vitórias: Não houve vencedor...")
-  break
+      break 
+  
           
           
 

@@ -15,8 +15,8 @@ peso = float(input("Me informe seu peso:"))
 altura = float(input("Me informe sua altura:"))
 
 if peso < 70 or peso > 80:
-    print("RECUDADO POR PESO")
+    print("RECUSADO POR PESO!")
 elif altura < 1.75 or altura > 1.90:
-    print("RECUSADO POR ALTURA")
+    print("RECUSADO POR ALTURA!")
 else:
     print("ACEITO!")
