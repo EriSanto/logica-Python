@@ -3,18 +3,30 @@
 #os termos são calculados pela soma dos dois termos anteriores: 1, 1, 2, 3, 5, 8, 13, 21,
 #34, ...
 
-numero = 8
-numero+=1
-a = 1
-b = 1
-soma = (a + b) + b 
 
+# print('{}'.format(c), end=' ')
+n = 8
 
+n1= 0
+n2 = 1
+n3= 0
 
-for r in range(1, numero, soma):
+cont = 0
 
-    print(r)
+while cont < n:
+    print('{}'. format(n3), end=' ' )
+    n1 = n2
+    n2 = n3
+    n3 = n1 * n2
+    cont+=1
+print("fim")
 
+ 
+ 
+ 
+  
+    
+    
 
 
 

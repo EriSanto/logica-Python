@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(69, 73, 77);
+
+    
+   
+}
+
+h1, h2{
+    margin: 30px;
+}
+
+form{
+    background-color: rgb(175, 159, 159);
+    margin-top: 5%;
+    border: 3px solid black;
+    padding: 5%;
+    text-align: center;
+  
+
+}
+
+input{
+
+    margin-bottom: 5px;
+    
+}
+
+.alinhamento-input{
+    display: flex;
+
+    flex-direction: column;
+    text-align: start;
+}
+
+.input_começo{
+
+    border-radius: 5px;
+
+}
+
+div{
+
+    text-align: start;
+}
+
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 5px;
+    background-color: brown;
+    border-radius: 5px;
+}
+
+a:hover{
+    background-color: blue;
+    padding: 6px;
+}

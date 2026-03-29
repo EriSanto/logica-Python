@@ -108,9 +108,9 @@ while salario <= 0:
     salario = float(input("Me informe seu salario:"))
     
 print(f"---- Informações ----")
-print("Nome: ", nome)
-print("Idade: ", idade)
-print("Salário: ", salario)
+print("Nome:",nome)
+print("Idade:",idade)
+print("Salário:",salario)
 
     
     

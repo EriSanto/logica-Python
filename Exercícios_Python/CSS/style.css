@@ -1,0 +1,17 @@
+.flex-pai{
+    background-color: blue;
+    height: 600px;
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    justify-content: start ;
+    align-items: center;
+}
+
+.flex-pai div{
+    background-color: azure;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Exercícios_Python/Lógica_Exercícios/HTML/style2.css">
+    <title>Formulário Exercício</title>
+</head>
+
+<body>
+
+
+
+    <form action="">
+
+        <h1>Dados IBGE</h1>
+
+        <div>
+            <label for="nome">Nome:</label><br>
+            <input class="input_começo" type="text" id="nome" placeholder="Digite seu nome..." required><br><br>
+
+            <label for="idade">Ano de Nascimento:</label><br>
+            <input class="input_começo" type="text" id="idade" placeholder="dd/mm/aaaa" required><br><br>
+
+            <label for="e-mail">E-mail:</label><br>
+            <input class="input_começo" type="email" id="e-mail" placeholder="Digite seu e-mail..." required><br><br>
+
+            <label for="senha">Senha:</label><br>
+            <input class="input_começo" type="password" id="senha" placeholder="Digite sua senha..." required>
+        </div>
+
+        <h2>Raça</h2>
+
+
+
+        <div class="alinhamento-input">
+
+            <label for="branco">Branco</label>
+            <input type="radio" name="raça" id="branco" value="branco" required>
+            
+            <label  for="preto">Preto</label>
+            <input  type="radio" name="raça" id="preto" value="branco" required>
+            
+            <label  for="pardo">Pardo</label>
+            <input  type="radio" name="raça" id="pardo" value="pardo" required>
+            
+
+            <label for="amarelo">Amarelo</label>
+            <input type="radio" name="raça" id="amarelo" value="amarelo" required>
+            
+            <label for="indigena">Indigena</label>
+            <input type="radio" name="raça" id="indigena" value="indigena" required>
+            
+
+            <h2>Itens que tem em casa</h2>
+
+
+            <label for="tv">Televisão</label>
+            <input type="checkbox" name="itens" id="tv" value="Televisão">
+            
+
+            <label for="gelade">Geladeira</label>
+            <input type="checkbox" name="itens" id="gelade" value="Geladeira">
+            
+
+
+            <label for="fogao">Fogão</label>
+            <input type="checkbox" name="itens" id="fogao" value="Fogão">
+
+            <label for="maquina">Maquina de lavar roupa</label>
+            <input type="checkbox" name="itens" id="maquina" value="Maquina">
+            
+
+        </div>
+
+
+        <h2>Publico</h2>
+
+        <select name="Publico" id="">
+            <option selected disabled value="Publico">Escolha seu Publico</option>
+            <option value="Criança">Criança</option>
+            <option value="Adolescente">Adolescênte</option>
+            <option value="Adulto">Adulto</option>
+            <option value="Idoso">Idoso</option>
+        </select><br><br>
+
+        <input type="submit"> <br><br>
+
+        <a href="../HTML/tabelas.html">Voltar a pagina anterior</a>
+
+
+
+    </form>
+
+
+</body>
+
+</html>

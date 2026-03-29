@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Formulário</title>
+</head>
+
+<body>
+
+
+    <!--O "FOR" server para dar o nome ao compo, o "ID" serve para likar o label ao input, 
+    quando clicar ao nome, vai selecionar o campo-->
+
+    <!--Placeholder serve para deixar uma mensagem dentro do campo para o usuário-->
+
+    <!--Required serve para obrigar o usuário a preencher o campo-->
+
+    <!--O Value serve para atribuir o nome ao campo-->
+
+    
+
+    <form action="">
+        <h1>Formulário Aqui</h1>
+
+        <!--Adicionar dados-->
+
+        <label for="campo_nome">Nome:</label>
+        <input id="campo_nome" type="text" placeholder="Digite seu nome aqui" required><br><br>
+
+        <label for="senha">E-mail:</label>
+        <input id="senha" type="email" placeholder="Digite um e-mail" required><br><br>
+
+        <label for="senha">Senha:</label>
+        <input id="senha" type="password" placeholder="Digite sua senha" required><br><br>
+
+        <!--Opção de apenas uma escolha-->
+        <h2>Animal de estimação</h2>
+
+        <input type="radio" name="animal" id="cat" value="Gato">
+        <label for="cat">Gato</label><br><br>
+
+        <input type="radio" name="animal" id="dog" value="Cachorro">
+        <label for="dog">Cachorro</label><br><br>
+
+        <!--Opção de várias escolhas-->
+        <h2>O que voce tem em casa</h2>
+
+        <input type="checkbox" name="coisa" id="TV" value="Televisão">
+        <label for="TV">Televisão</label><br><br>
+
+        <input type="checkbox" name="coisas" id="Geladeira" value="Geladeira">
+        <label for="Geladeira">Geladeira</label><br><br>
+
+        <input type="submit" value="Enviar">
+
+        <!--Box para escolher uma opção-->
+
+        <h2>Escolha uma cor:</h2>
+        <select name="cores" id="">
+            <option selected disabled value="Vermelho">Selecione uma cor</option>
+            <option value="Azul">Azul</option>
+            <option value="Amarelo">Amarelo</option>
+            <option value="Vermelho">Vermelho</option><br><br>
+
+
+        </select>
+
+        <!--Campo para mensagem-->
+
+        <h2>Digite sua mensage:</h2>
+
+        <textarea cols="30" rows="5" placeholder="Digite aqui sua mensagem" name="mensagem" id=""></textarea>
+        <button>Clique aqui</button>
+
+
+
+
+
+    </form>
+
+
+
+</body>
+
+</html>

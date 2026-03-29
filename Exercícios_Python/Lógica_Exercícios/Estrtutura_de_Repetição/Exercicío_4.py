@@ -4,16 +4,3 @@
 # mantidas as taxas de crescimento.
 
 
-
-pais_A_habitantes, pais_A_crecimento = 80.000,  3
-pais_B_habitantes, pais_B_crecimento = 90.000, 1.5
-
-anos = 0
-while pais_A_habitantes < pais_B_habitantes:
-    anos += 1
-    pais_A_habitantes = pais_A_habitantes / pais_A_crecimento * 100 + pais_A_habitantes
-    pais_B_habitantes = pais_B_habitantes / pais_B_crecimento * 100 + pais_B_habitantes
-
-print(f'Daqui {anos}.')
-
-

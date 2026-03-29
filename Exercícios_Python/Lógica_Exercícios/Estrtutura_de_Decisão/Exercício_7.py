@@ -8,6 +8,8 @@ if numero_1 < numero_2 < numero_3:
     print(f"A ordem decrescente dos números: {numero_3} - {numero_2} - {numero_1}")
 elif numero_1 > numero_2 > numero_3:
     print(f"A ordem decrescente dos números: {numero_1} - {numero_2} - {numero_3}")
+elif numero_1 > numero_2 < numero_3:
+    print(f"A ordem decrescente dos números: {numero_3} - {numero_1} - {numero_2}")
 elif numero_1 < numero_2 > numero_3:
     print(f"A ordem decrescente dos números: {numero_2} - {numero_3} - {numero_1}")
 elif numero_1 > numero_2 < numero_3:
