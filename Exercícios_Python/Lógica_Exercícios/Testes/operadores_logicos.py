@@ -22,5 +22,13 @@ tem_dinheiro = not tem_dinheiro
 msg = 'Tem dinehiro' + str(tem_dinheiro)
 print(msg)'''
 
+x = 1
+
+y = 0
+
+for x in range(11):
+    y += x
+print(y)
+    
 
 

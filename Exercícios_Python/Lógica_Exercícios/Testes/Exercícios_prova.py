@@ -56,8 +56,13 @@ print(calculo)'''
  
  #Calcular o fatorial de um número.
 
-num = 5
+'''num = 5
 
 calculo = factorial(num)
 
-print(calculo)
+print(calculo)'''
+
+x = 5
+while x > 0:
+    x -= 2
+print(x)

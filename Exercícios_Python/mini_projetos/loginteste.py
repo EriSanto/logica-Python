@@ -1,4 +1,4 @@
-print("Tela de cadastramento de conta.")
+print("Tela de cadastro de conta.")
 nome = input("Nome:")
 senha = input("Senha:")
 while len(senha) < 5:

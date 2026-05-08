@@ -1,34 +1,115 @@
 import mysql.connector
+from mysql.connector import Error
 
 
-
-try:
-    print("conectando")
-    mydb = mysql.connector.connect(
-      host="localhost",
-      user="root2",
-      password="senha",
-      database="bancodeteste" # Optional: specify a database
+def conectarBanco():
+    # Configurações de conexão
+    conexao = mysql.connector.connect(
+        host='localhost',
+        user='eriky',
+        password='senha',
+        database='bancodeteste',
+        use_pure=True
     )
+    return conexao
+
+def buscar_fornecedor(id):
     
-    print(mydb)
-    # Create a cursor object
-    #mycursor = mydb.cursor()
-    if mydb.is_connected():
-        print("conectou")
-    else:
-        print("falhou")
+    conexao = None
+    print("inicio")
+    try:
+        # Configurações de conexão
+        conexao = conectarBanco()
+        
+        if conexao.is_connected():
+            print("Conectado ao MySQL com sucesso!")
+            cursor = conexao.cursor()
+            
+            # Exemplo de consulta
+            cursor.execute("SELECT * FROM fornecedores where codigo = %s;", [id])
+            
+            fornecedores = cursor.fetchone()
+            
+            return fornecedores
+        
+            
+    except Exception as e:
+        print("Teste");
+        print(f"Erro ao conectar: {e}")
+        
+    finally:
+        print("Teste");
+        if conexao and conexao.is_connected():
+            cursor.close()
+            conexao.close()
+            print("Conexão MySQL encerrada.")
+      
+def inserir_fornecedor(nome, email):
+    conexao = None
+    print("inicio")
+    try:
+        # Configurações de conexão
+        conexao = conectarBanco()
+        
+        if conexao.is_connected():
+            print("Conectado ao MySQL com sucesso!")
+            cursor = conexao.cursor()
+            pessoa = [nome, email]
+            result = cursor.execute("INSERT INTO fornecedores(codigo, nome, email) VALUES (null, %s, %s);", pessoa)
+            conexao.commit()
+            print(result)
+            
+    except Exception as e:
+        print("Teste");
+        print(f"Erro ao conectar: {e}")
+        
+    finally:
+        print("Teste");
+        if conexao and conexao.is_connected():
+            cursor.close()
+            conexao.close()
+            print("Conexão MySQL encerrada.")
     
+def pegar_fornecedores():
+    conexao = None
+    print("inicio")
+    try:
+        # Configurações de conexão
+        conexao = conectarBanco()
+        
+        if conexao.is_connected():
+            print("Conectado ao MySQL com sucesso!")
+            cursor = conexao.cursor()
+            
+            # Exemplo de consulta
+            cursor.execute("SELECT * FROM fornecedores;")
+            
+            fornecedores = cursor.fetchall()
+            
+            return fornecedores
+        
+            
+    except Exception as e:
+        print("Teste");
+        print(f"Erro ao conectar: {e}")
+        
+    finally:
+        print("Teste");
+        if conexao and conexao.is_connected():
+            cursor.close()
+            conexao.close()
+            print("Conexão MySQL encerrada.")
+    
+def inicio():
+    #inserir_fornecedor("Edipo","edipo@yahoo.com.br")
+    #fornecedores = pegar_fornecedores()
+    #print(fornecedores[0][1])
+    
+    
+    #inserir_fornecedor("Maria", "maria@gmail.com.br")
+    
+    fornecedor = buscar_fornecedor(8)
+    print(fornecedor)
 
-
-# Execute an SQL query (e.g., creating a table)
-    #mycursor.execute("CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255))")
-
-# Note: for data manipulation queries (INSERT, UPDATE, DELETE), you need to commit changes
-    mydb.commit() 
-    mydb.close()
-
-    print("Table 'customers' created successfully.")
-except mysql.connector.Error as err:
-    print(f"Error: {err}")
-    mydb.close()
+if __name__ == "__main__":
+    inicio()

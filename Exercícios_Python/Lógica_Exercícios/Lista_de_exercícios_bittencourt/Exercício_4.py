@@ -11,23 +11,21 @@
 
 
 
-# x = 0
 
-# while (x < 3):
-    
-    
-#     peso = int(input("Me informe seu peso:"))
-#     altura = int(input("Me informe sua altura:"))
+while True:
+    alt = int(input("Me informe sua altura: "))
+    pes = int(input("Me informe seu peso: "))
 
-#     if peso >= 70 and peso <= 80 and altura >= 175 and altura <= 190:
-#         print("Aceito")
-#     elif peso >= 70 and peso <= 80:
-#         print("Recusado por altura")
-#     elif altura >= 175 and altura <= 190:
-#         print("Recusado por peso")
-#     else:
-#         print("Totalemnete recusado")
-#     x += 1
+    if (alt < 175 or alt > 190) and  (pes < 70 or pes > 80):
+        print("Totalmente recusado!")
+    else:
+        if alt < 175 or alt > 190:
+            print("Recusado por altura.")
+        elif pes < 70 or pes > 80:
+            print("Recusado por peso.")
+        else:
+            print("Aceito!")
+        
     
 
     

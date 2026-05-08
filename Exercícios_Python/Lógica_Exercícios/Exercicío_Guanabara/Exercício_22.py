@@ -26,5 +26,14 @@
 
 
 
-nome = "Eriky Costa Santos"
-print(f"Nome normal: {nome}\nNome em maiúsculo: {nome.upper()}\nQuantas letras ao todo (sem considerar os espaços): {len(nome) - nome.count(' ')} \nQuantas letras tem o primeiro nome: {len(nome[0:5])} ")
+#nome = "Eriky Costa Santos"
+# print(f"Nome normal: {nome}\nNome em maiúsculo: {nome.upper()}\nQuantas letras ao todo (sem considerar os espaços): {len(nome) - nome.count(' ')} \nQuantas letras tem o primeiro nome: {len(nome[0:5])} ")
+
+frase = "Banana é uma fruta bem gostosa, mas prefiro goiaba"
+
+print(frase)
+print(frase.replace("Banana", "Laranja" ))
+print('_'.join(frase[36:].upper().split()))
+print(frase[::-1].upper())
+
+print(' '.join(frase[::-1].split()))
