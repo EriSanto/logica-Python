@@ -36,7 +36,7 @@ while True:
         
        
         print("\n==================================================================\n")
-        print(f" A) Pessoas cadastradas foram {x}")
+        print(f"A) Pessoas cadastradas foram {x}")
 
         for p in pessoas:
             soma += p['idade']
@@ -50,10 +50,12 @@ while True:
         for p in pessoas:
             if p['sexo'] == 'F' or p['sexo'] == 'f':
                 print(f"  => {p["nome"]};")
-        for p in pessoas:
-            if p['idade'] > media:
-                print(f"D) Pessoas com idade acima de média:\n => {p["nome"]};")
-                break
+                
+        print(f"D) Pessoas com idade acima de média:")
+        for i in pessoas:
+            if i['idade'] >= media:
+                print(f"  => {i["nome"]};")
+        break
 
             
             
