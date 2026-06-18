@@ -13,7 +13,7 @@ class Produto:
         self.preco = preco
     
     def etiqueta(self):
-        texto = Text(f"{self.nome}\n---------------\n....R${self.preco:,.2f}....", justify="center")
+        texto = Text(f"{self.nome}\n---------------------\n....R${self.preco:,.2f}....", justify="center")
         return Panel.fit(texto, title="Produto"  )
     
 p1 = Produto("Playstation 5",3000)

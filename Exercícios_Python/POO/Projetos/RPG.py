@@ -1,3 +1,5 @@
+from rich import print
+
 class Avatar:
     def __init__(self):
         self.nome = input("Nome: ")
@@ -12,8 +14,8 @@ class Avatar:
         if self.clas == "Mago" or self.clas == "mago":
             return f"""        STATUS 
         
-    HP:           4
-    MANA:         5
+    HP:           :heart: :heart: :heart: :heart:  
+    MANA:         :globe_with_meridians::globe_with_meridians::globe_with_meridians::globe_with_meridians:
     Dano:         4
     Armadura:     0
     Carismas:     1
